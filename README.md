@@ -7,16 +7,19 @@ Il récupère les stats via l’API [GameTools](https://api.gametools.network/) 
 
 ## Fonctionnalités
 
-- Génération de **bannière avec fond, logo et frosted glass** derrière les stats.  
+- Génération de bannière avec fond, logo et frosted glass derrière les stats.
 - Affichage des statistiques principales :
-  - K/D, Kills, Deaths, Wins, Loses  
-  - Accuracy, Classe préférée, Revives, Kill Assists  
-  - Time Played  
-- Support pour **plusieurs plateformes** :
-  - `pc`, `xboxone`, `ps4`, `xboxseries`, `ps5`, `xbox`, `psn`  
-- Commande simple sur Discord :  
-`!bf6stats <pseudo> [plateforme]`
-- Génération d’image directement en mémoire (**BytesIO**) sans créer de fichier temporaire.
+  - K/D, Kills, Deaths, Wins, Loses
+  - Accuracy, Classe préférée, Revives, Kill Assists
+  - Time Played
+- Support pour plusieurs plateformes :
+  - pc, xboxone, ps4, xboxseries, ps5, xbox, psn
+- Commande Discord simple :
+`!BF6Stat <pseudo> [plateforme]`
+- Gestion du cache par joueur : si l’API est indisponible, le bot utilise les dernières stats sauvegardées.
+- Mode offline automatique : ajoute [OFFLINE] sur le pseudo si le bot utilise le cache.
+- Icône de la classe préférée du joueur affichée sur la bannière.
+- Génération d’image locale, prête à être envoyée dans Discord.
 
 ---
 
